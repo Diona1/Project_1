@@ -19,34 +19,6 @@ html {
   min-height: 80rem;
 }
 
-header {
-  text-align: center;
-  margin: 3rem 0;
-}
-
-header img {
-  height: 5rem;
-  width: 10rem;
-  object-fit: cover;
-}
-
-header h1 {
-  margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 5rem;
-  background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
-}
-
-header p {
-  margin: 0;
-  font-size: 1.25rem;
-  color: #8964b0;
-  font-family: "Roboto Condensed", sans-serif;
-}
-
 main {
   width: 90%;
   max-width: 50rem;
@@ -147,4 +119,53 @@ main h2 {
 
 #tab-content code {
   font-size: 1rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  main {
+    width: 95%;
+  }
+
+  #core-concepts ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #core-concepts li {
+    width: 100%;
+  }
+
+  #examples menu {
+    flex-direction: column;
+  }
+
+  #examples menu button {
+    width: 100%;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    width: 100%;
+  }
+
+  #core-concepts li img {
+    height: 3rem;
+    width: 4rem;
+  }
+
+  #core-concepts li p {
+    font-size: 0.8rem;
+  }
+
+  #examples menu button {
+    font-size: 0.9rem;
+  }
+
+  #tab-content code {
+    font-size: 0.9rem;
+  }
 }
