@@ -1,0 +1,39 @@
+/* Example of custom styles */
+@layer base {
+    body {
+      @apply bg-stone-50;
+    }
+  }
+  
+  @layer components {
+    .card {
+      @apply p-4 bg-white rounded-lg shadow-md;
+    }
+  }
+  
+  @layer utilities {
+    @media (min-width: 640px) {
+      .card {
+        @apply p-6;
+      }
+    }
+  
+    @media (min-width: 768px) {
+      .card {
+        @apply p-8;
+      }
+    }
+  
+    @media (min-width: 1024px) {
+      .card {
+        @apply p-10;
+      }
+    }
+  
+    @media (min-width: 1280px) {
+      .card {
+        @apply p-12;
+      }
+    }
+  }
+  
