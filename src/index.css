@@ -327,25 +327,21 @@ ol {
   }
   50% {
     border-color: #f8c031;
-    box-shadow: 0 0 0 0.5rem rgba(248, 165, 49, 0);
+    box-shadow: 0 0 0 0.5rem rgba(246, 227, 90, 0);
   }
   100% {
     border-color: #f6e35a;
-    box-shadow: 0 0 0 0 rgba(246, 227, 90, 0);
+    box-shadow: 0 0 0 0 rgba(246, 227, 90, 0.4);
   }
 }
 
-/* Fancy animation for showing the "Game Over" element */
 @keyframes pop-in {
   0% {
-    transform: scale(0);
     opacity: 0;
-  }
-  80% {
-    transform: scale(1.1);
-    opacity: 1;
+    transform: scale(0.8);
   }
   100% {
+    opacity: 1;
     transform: scale(1);
   }
 }
