@@ -199,6 +199,130 @@ header p {
   background: #051715;
 }
 
+/* Media Queries */
+@media (max-width: 1200px) {
+  #content {
+    max-width: 50rem;
+  }
+
+  #challenges {
+    max-width: 90%;
+    gap: 1rem;
+  }
+
+  .challenge {
+    width: 18rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  #player input {
+    width: 100%;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #player button {
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  #content {
+    padding: 1.5rem;
+  }
+
+  #challenges {
+    max-width: 100%;
+  }
+
+  .challenge {
+    width: 100%;
+    max-width: 18rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #player input {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  #player button {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  #content {
+    padding: 1rem;
+  }
+
+  #challenges {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .challenge {
+    width: 100%;
+    max-width: 16rem;
+    margin: 1rem auto;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #player input,
+  #player button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  #content {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .challenge {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  #player input {
+    font-size: 1rem;
+  }
+
+  #player button {
+    font-size: 1rem;
+    padding: 0.3rem 0.8rem;
+  }
+
+  .result-modal h2 {
+    font-size: 2.5rem;
+  }
+
+  .result-modal p {
+    font-size: 1rem;
+  }
+
+  .result-modal button {
+    font-size: 1rem;
+    padding: 0.3rem 0.8rem;
+  }
+}
+
 @keyframes slide-in-from-top {
   0% {
     transform: translateY(-15%);
